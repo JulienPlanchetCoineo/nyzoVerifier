@@ -40,8 +40,8 @@ public class Message {
 
     // We do not broadcast any messages to the full mesh from the broadcast method. We do, however, use the full mesh
     // as a potential pool for random requests for the following types. This reduces strain on in-cycle verifiers.
-    private static final Set<MessageType> fullMeshMessageTypes = new HashSet<>(Arrays.asList(MessageType.BlockRequest11,
-            MessageType.BlockWithVotesRequest37));
+    private static final Set<MessageType> fullMeshMessageTypes = new HashSet<>();
+
 
     static {
         loadWhitelist();
